@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(26, 25, 25);
+}
+
+.Container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+/* CounterPanel */
+
+.CounterPanel {
+    height: 50vh;
+    width: 30%;
+    padding: 5vh 0;
+    border-radius: 5vw;
+    background-color: rgb(71, 68, 68);
+
+    box-shadow: 0 0 2vw black;
+    user-select: none;
+    text-align: center;
+}
+
+.CounterPanel h1 {
+    padding-top: 1.5vh;
+    font-size: 6vh;
+    color: rgb(224, 223, 223);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.CounterPanel button {
+    font-size: 4vh;
+    padding: 1vh;
+    margin: 2vh 2vh;
+
+    border: solid 0.35vh black;
+}
+
+.CounterPanel button[id="btnAddition"] {
+    width: 12%;
+    margin-top: 4vh;
+    border-radius: 1.75vw;
+    background-color: rgb(144, 238, 144);
+}
+
+.CounterPanel button[id="btnSubtraction"] {
+    width: 12%;
+    margin-top: 4vh;
+    border-radius: 1.75vw;
+    background-color: rgb(238, 82, 82);
+}
+
+.CounterPanel button[id="btnReset"] {
+    width: 25%;
+    margin-top: 3vh;
+    border-radius: 1vw;
+    background-color: rgb(241, 189, 91);
+}
+
+.CounterPanel button[id="btnAddition"]:hover {
+    background-color: green;
+}
+
+.CounterPanel button[id="btnSubtraction"]:hover {
+    background-color: red;
+}
+
+.CounterPanel button[id="btnReset"]:hover {
+    background-color: orange;
+}
+
+.CounterPanel p {
+    font-size: 7vh;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    color: rgb(224, 223, 223);
+
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* UserPanel */
+
+.UserPanel {
+    height: 96vh;
+    width: 15%;
+    background-color: rgb(41, 39, 39);
+
+    box-shadow: 0.3vw 0 0.75vw black;
+    overflow-y: auto;
+    user-select: none;
+    text-align: center;
+}
+
+.UserPanel h1 {
+    font-size: 3.75vh;
+    padding-top: 5vh;
+    padding-bottom: 3.5vh;
+    color: rgb(224, 223, 223);
+}
+
+.UserPanel label {
+    font-size: 2.25vh;
+    color: rgb(224, 223, 223);
+}
+
+.UserPanel button {
+    width: 25%;
+    font-size: 2.5vh;
+    margin-top: 1.25vh;
+    margin-bottom: 3.5vh;
+    margin-left: 0.5vh;
+    background-color: rgb(182, 182, 182);
+
+    border: none;
+}
+
+.UserPanel button:hover {
+    background-color: white;
+}
+
+.UserPanel button[id="btnClearInputsHandler"] {
+    width: 35%;
+}
+
+.UserPanel button[id="btnClearInputsHandler"]:hover {
+    width: 40%;
+    font-size: 2.75vh;
+}
+
+.UserPanel input {
+    width: 40%;
+    font-size: 2.5vh;
+    margin-bottom: 5vh;
+    background-color: rgb(224, 223, 223);
+    border: solid 0.35vh rgb(41, 39, 39);
+}
+
+.UserPanel input:focus {
+    border: solid 0.35vh rgb(82, 157, 238);
+    outline: none;
+    background-color: whitesmoke;
+}
+
+.UserPanel input[id="inputSetReduction"] {
+    margin-bottom: 5vh;
+}
+
+.UserPanelHeader {
+    margin-bottom: 4vh;
+
+    border-bottom: solid 0.35vh rgb(224, 223, 223);
+}
+
+/* Block arrows for browsers. which display them */
+.UserPanel input[type="number"]::-webkit-inner-spin-button,
+.UserPanel input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide arrows for Internet Explorer */
+.UserPanel input[type="number"]::-ms-clear {
+    display: none;
+}
+
+/* Hide arrows for other browsers */
+.UserPanel input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* ValuePanel */
+
+.ValuePanel {
+    height: 96vh;
+    width: 15%;
+    background-color: rgb(41, 39, 39);
+
+    box-shadow: -0.3vw 0 0.75vw black;
+    user-select: none;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.ValuePanel h1 {
+    font-size: 3.75vh;
+    padding-top: 5vh;
+    padding-bottom: 3.5vh;
+    color: rgb(224, 223, 223);
+}
+
+.ValuePanel label {
+    font-size: 2.25vh;
+    color: rgb(224, 223, 223);
+}
+
+.ValuePanel button {
+    width: 25%;
+    font-size: 2.5vh;
+    margin-top: 1.25vh;
+    margin-bottom: 3.5vh;
+    background-color: rgb(182, 182, 182);
+
+    border: none;
+}
+
+.ValuePanel button:hover {
+    background-color: white;
+}
+
+.ValuePanel input[type="text"] {
+    width: 30%;
+    font-size: 2.5vh;
+    margin-top: 1.25vh;
+    margin-bottom: 5vh;
+    background-color: rgb(224, 223, 223);
+
+    cursor: default;
+    pointer-events: none;
+    border: none;
+    text-align: center;
+}
+
+.ValuePanel input[id="displayCurrentValueOfReduction"] {
+    margin-bottom: 5vh;
+}
+
+.ValuePanel button[id="btnSetDeafultOptionsHandler"]:hover {
+    width: 30%;
+    font-size: 2.75vh;
+}
+
+.ValuePanelHeader {
+    margin-bottom: 4vh;
+
+    border-bottom: solid 0.35vh rgb(224, 223, 223);
+}
+
+
+/* CreatorContainer */
+
+.CreatorContainer {
+    height: 4vh;
+    width: 100%;
+    background-color: rgb(30, 28, 28);
+
+    text-align: center;
+}
+
+.CreatorContainer p {
+    flex: 1;
+    font-size: 1.65vh;
+    margin-top: 1vh;
+
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(153, 146, 146);
+    border-radius: 150vh;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 150vh;
+    background-color: rgb(60, 58, 58);
+
+    border: 0.025rem solid rgb(153, 146, 146);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .UserPanel button,
+    .ValuePanel button {
+        width: 40%;
+    }
+
+    .UserPanel button[id="btnClearInputsHandler"] {
+        width: 55%;
+    }
+
+    .UserPanel button[id="btnClearInputsHandler"]:hover {
+        width: 60%;
+    }
+
+    .ValuePanel label {
+        font-size: 1.80vh;
+    }
+
+    .ValuePanel button:hover {
+        width: 80%;
+    }
+}
+
+/* Customize scrollbar for Mozilla Firefox*/
+@supports (scrollbar-color: rgb(153, 146, 146) rgb(60, 58, 58)) {
+    * {
+        scrollbar-color: rgb(153, 146, 146) rgb(60, 58, 58);
+    }
+}
