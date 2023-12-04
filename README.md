@@ -37,7 +37,7 @@ npm install
 Run the application:
 npm start
 
-Open your browser and go to http://localhost:3000 to view the app:
+Open your browser and go to http://localhost:3000 to view the app.
 
 Dependencies:
 React
