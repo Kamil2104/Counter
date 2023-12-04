@@ -25,19 +25,19 @@ Default Options:
 Users can set default options for the boost and reduction values (default boost value --> 1, default reduction value --> -1).
 
 Usage:
-Clone the repository to your local machine.
+Clone the repository to your local machine:
 git clone https://github.com/your-username/counter-app.git
 
-Navigate to the project directory.
+Navigate to the project directory:
 cd path_to_project
 
-Install dependencies.
+Install dependencies:
 npm install
 
-Run the application.
+Run the application:
 npm start
 
-Open your browser and go to http://localhost:3000 to view the app.
+Open your browser and go to http://localhost:3000 to view the app:
 
 Dependencies:
 React
