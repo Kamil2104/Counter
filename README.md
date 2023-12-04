@@ -40,8 +40,8 @@ npm start
 Open your browser and go to http://localhost:3000 to view the app.
 
 Dependencies:
-React
-CSS (styles are defined in the Main.css file)
+React,
+CSS (styles are defined in the Main.css file).
 
 Author:
 Niewiadomski Kamil
