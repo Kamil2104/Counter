@@ -1,3 +1,5 @@
+# COUNTER
+
 Counter App
 This is a simple React application that allows users to interact with a counter. Users can set the counter value, adjust the boost and reduction values, and perform various operations on the counter.
 
